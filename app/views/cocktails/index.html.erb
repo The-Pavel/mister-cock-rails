@@ -1,0 +1,13 @@
+index.html.erb
+
+
+
+<div class="container">
+  <div class="row">
+  <% @cocktails.each do |cocktail| %>
+    <div class="col-sm">
+  <%= cocktail.title %>
+    </div>
+  <% end %>
+  </div>
+</div>

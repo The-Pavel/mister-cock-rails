@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+10.times do
+  Cocktail.create(
+    title: "The #{Faker::Address.city}"
+    )
+end
+
+  puts "finished creating drinks"
