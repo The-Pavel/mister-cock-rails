@@ -2,7 +2,8 @@
   "name": "mister-cock-rails",
   "private": true,
   "dependencies": {
-    "@rails/webpacker": "3.4"
+    "@rails/webpacker": "3.4",
+    "sweetalert": "^2.1.0"
   },
   "devDependencies": {
     "webpack-dev-server": "2.11.2"
