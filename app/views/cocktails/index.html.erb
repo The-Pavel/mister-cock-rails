@@ -1,14 +1,15 @@
 <div class="container">
-    <h1 style="font-weight: bold; color: white;">Ingredients</h1>
-    <%= link_to "See All Cocktails", cocktails_path, {:style=>'color:white;'} %>
-  <div class="row">
-    <% if flash[:notice] %>
-      <div class="notice"><%= flash[:notice] %></div>
-    <% end %>
-    <%= render @ingredients %>
-  </div>
-  <div class="row">
-    <div class="col col-xs-12 col-md-4 col-md-offset-4"><%= link_to "Add Ingredient", new_ingredient_path %></div>
+  <h1 style="font-weight: bold; color: white;">Cocktails</h1>
+  <%= link_to "See All Ingredients", ingredients_path, {:style=>'color:white;'} %>
+    <div class="row">
+      <% if flash[:notice] %>
+        <div class="notice"><%= flash[:notice] %></div>
+      <% end %>
+      <%= render @cocktails %>
+    </div>
+    <div class="row">
+      <div class="col col-xs-12 col-md-4 col-md-offset-4"><%= link_to "Add a Cocktail", new_cocktail_path %></div>
+    </div>
   </div>
 </div>
 <div id="thanks">Thank you /gabriellewee</div>
@@ -70,4 +71,5 @@
     </clippath>
   </defs>
 </svg>
+
 
