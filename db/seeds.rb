@@ -10,5 +10,6 @@ Ingredient.delete_all
 
 10.times do
  Ingredient.create(name: Faker::Food.ingredient)
+ puts "created ingredient"
 end
 

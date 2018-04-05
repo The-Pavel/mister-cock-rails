@@ -1,2 +1,8 @@
 <h1>Ingredients#new</h1>
 <p>Find me in app/views/ingredients/new.html.erb</p>
+
+<%= simple_form_for(@ingredient) do |f| %>
+<%= f.input :name %>
+<%= f.button :submit, input_html: { id: "sweet-alert-demo" } %>
+<% end %>
+
