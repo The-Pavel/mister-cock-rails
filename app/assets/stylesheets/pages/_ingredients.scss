@@ -7,6 +7,12 @@
   font-style: $headers-font;
 }
 
+.ingredient:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px black;
+  transition: all 0.5s ease;
+}
+
 #thanks {
   position: absolute;
   right: 50px;
