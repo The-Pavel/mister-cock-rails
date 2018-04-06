@@ -13,8 +13,10 @@ Ingredient.delete_all
  puts "created ingredient"
 end
 
-10.times do
- Cocktail.create(name: Faker::ProgrammingLanguage.name)
+Cocktail.delete_all
+
+20.times do
+ Cocktail.create(name: "The " + Faker::HowIMetYourMother.catch_phrase)
  puts "created cocktail"
 end
 
