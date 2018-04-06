@@ -1,14 +1,16 @@
-<div class="container">
-    <h1 style="font-weight: bold; color: white;">Ingredients</h1>
-    <%= link_to "See All Cocktails", cocktails_path, {:style=>'color:white;'} %>
-  <div class="row">
-    <div class="col col-xs-12 col-md-4"><%= link_to "Add an Ingredient", new_ingredient_path %></div>
-  </div>
-  <div class="row">
-    <% if flash[:notice] %>
-      <div class="notice"><%= flash[:notice] %></div>
-    <% end %>
-    <%= render @ingredients %>
+<div class="container" style="height: 100vh;">
+  <h1 style="font-weight: bold; color: white;">Cocktails with <%= @ingredient.name %></h1>
+  <p><%= link_to "See All Ingredients", ingredients_path, {:style=>'color:white;'} %></p>
+  <p><%= link_to "See All Cocktails", cocktails_path, {:style=>'color:white;'} %></p>
+    <div class="row">
+      <div class="col col-xs-12 col-md-4"><%= link_to "Add a Cocktail", new_cocktail_path %></div>
+    </div>
+    <div class="row">
+      <% if flash[:notice] %>
+        <div class="notice"><%= flash[:notice] %></div>
+      <% end %>
+      <%= render @cocktails %>
+    </div>
   </div>
 </div>
 <ul ontouchstart>
@@ -70,4 +72,5 @@
     </clippath>
   </defs>
 </svg>
+
 

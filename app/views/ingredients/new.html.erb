@@ -1,8 +1,13 @@
-<h1>Ingredients#new</h1>
-<p>Find me in app/views/ingredients/new.html.erb</p>
-
-<%= simple_form_for(@ingredient) do |f| %>
-<%= f.input :name %>
-<%= f.button :submit, input_html: { id: "sweet-alert-demo" } %>
-<% end %>
+<div class="container" style="height: 100vh; padding-top: 100px;">
+  <div class="row">
+    <div class="col col-xs-12 col-md-4 col-md-offset-4">
+      <h1>New Ingredient</h1>
+      <%= simple_form_for(@ingredient) do |f| %>
+      <%= f.input :name %>
+      <%= f.button :submit, input_html: { id: "sweet-alert-demo" } %>
+      <%= link_to "Cancel", ingredients_path, {:class=>"btn btn-warning"} %>
+      <% end %>
+    </div>
+  </div>
+</div>
 

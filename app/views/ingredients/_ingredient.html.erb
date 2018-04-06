@@ -1,4 +1,4 @@
     <div class="col col-xs-12 col-md-4 ingredient">
-      <%= ingredient.name %>
+      <%= link_to ingredient.name, ingredient_cocktails_ingredient_path(ingredient.id) %>
       <%= link_to "Delete", ingredient_path(ingredient.id), method: :delete, data: { confirm: 'Are you sure?' }, class: 'red' %>
     </div>

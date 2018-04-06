@@ -1,5 +1,10 @@
-<h1>New Cocktail</h1>
 
-<%= render 'form', cocktail: @cocktail %>
+<div class="container" style="height: 100vh; padding-top: 100px;">
+  <div class="row">
+    <div class="col col-xs-12 col-md-4 col-md-offset-4">
+      <h1>New Cocktail</h1>
+      <%= render 'form', cocktail: @cocktail %>
+    </div>
+  </div>
+</div>
 
-<%= link_to 'Back', cocktails_path %>

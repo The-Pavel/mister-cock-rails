@@ -1,6 +1,11 @@
 class CocktailsController < ApplicationController
   before_action :set_cocktail, only: [:show, :edit, :update, :destroy]
 
+  def filter
+    #raise
+    @ingredient = Ingredient.find(params[:id])
+    @cocktails = @ingredient.cocktails
+  end
   # GET /cocktails
   # GET /cocktails.json
   def index

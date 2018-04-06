@@ -1,7 +1,16 @@
-<%= simple_form_for [@cocktail, @dose] do |f| %>
-<%= f.input :description %>
-<%= f.association :ingredient, collection: Ingredient.all %>
-<%= f.button :submit %>
-<%= link_to "Cancel", cocktail_path(@cocktail), {:class=>"btn btn-default"} %>
-<% end %>
+
+
+<div class="container" style="height: 100vh; padding-top: 100px;">
+  <div class="row">
+    <div class="col col-xs-12 col-md-4 col-md-offset-4">
+      <h2>Adding to <%= @cocktail.name %></h2>
+      <%= simple_form_for [@cocktail, @dose] do |f| %>
+      <%= f.input :description %>
+      <%= f.association :ingredient, collection: Ingredient.all %>
+      <%= f.button :submit %>
+      <%= link_to "Cancel", cocktail_path(@cocktail), {:class=>"btn btn-warning"} %>
+      <% end %>
+    </div>
+  </div>
+</div>
 

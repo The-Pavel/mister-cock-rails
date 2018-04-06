@@ -7,8 +7,16 @@
   font-style: $headers-font;
 }
 
-.cockname {
-  text-align: center !important;
+// .cocktails-scrollbar {
+//   margin-top: 100px;
+//  }
+
+.stuck {
+  position: fixed !important;
+  top: 10px;
+  left: 1100px;
+  width: 280px;
+  overflow-y: scroll !important;
 }
 
 .cockdelete {
@@ -20,7 +28,7 @@
 }
 
 .red {
-  color: #FA6462 !important;
+  color: #FFE066 !important;
 }
 
 .white {
