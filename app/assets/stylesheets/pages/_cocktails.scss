@@ -16,16 +16,33 @@
 // .cocktails-scrollbar {
 //   margin-top: 100px;
 //  }
-
-.page-wrap {
-  position: relative;
+.pagewrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
+.sticky {
+  position: sticky;
+  bottom: 100px;
+  right: 10px;
+}
+
+
+// .page-wrap {
+//   position: relative;
+//   margin-left: 500px;
+// }
+
+// .container {
+//   width: 120vw;
+// }
+
 .stuck {
-  position: fixed;
-  top: 0;
-  left: 1100px;
-  width: 280px;
+  position: sticky !important;
+  top: 10px;
+  right: 10px;
+  // padding-left: 200px;
   overflow-y: scroll;
 }
 
