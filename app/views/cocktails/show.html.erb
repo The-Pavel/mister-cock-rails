@@ -1,5 +1,8 @@
 <div class="container">
   <div class="row" style="height: 100vh;">
+    <% if flash[:notice] %>
+      <div class="notice"><%= flash[:notice] %></div>
+    <% end %>
     <div class="col col-xs-12">
       <p style="color: white; margin-bottom: 0;"><strong>Name:</strong></p>
       <p class="cockname"><%= @cocktail.name %></p>
@@ -7,7 +10,7 @@
     <div class="col col-xs-12">
       <%= link_to 'Edit', edit_cocktail_path(@cocktail), {:style=>'color: #A4DC7E;'} %> |
       <%= link_to 'Back', cocktails_path, {:style=>'color: #A4DC7E;'} %> |
-      <%= link_to 'Delete', @cocktail, method: :delete, data: { confirm: 'Are you sure?' }, class: 'red' %>
+      <%= link_to 'Delete', @cocktail, method: :delete, data: { confirm: 'Are you sure?' } , class: 'red' %>
     </div>
 
     <div class="col col-xs-12" style="color: white;">
@@ -15,7 +18,7 @@
       <p style="color: white;">Ingredients:</p>
       <%= link_to 'Add New Ingredient', new_cocktail_dose_path(@cocktail.id)  %>
       <% @cocktail.doses.each do |dose| %>
-        <p style="margin-top: 10px;"><%= dose.description %><%= '  of  ' %><%= dose.ingredient.name %>   <%= link_to 'Remove', dose, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn-xs btn-danger' %></p>
+        <p style="margin-top: 10px;"><%= dose.description %><%= '  of  ' %><%= dose.ingredient.name %>   <%= link_to 'Remove', dose, method: :delete, class: 'btn-xs btn-danger' %></p>
       <% end %>
     </div>
   </div>
