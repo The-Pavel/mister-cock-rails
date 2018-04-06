@@ -17,12 +17,16 @@
 //   margin-top: 100px;
 //  }
 
+.page-wrap {
+  position: relative;
+}
+
 .stuck {
-  position: fixed !important;
-  top: 10px;
+  position: fixed;
+  top: 0;
   left: 1100px;
   width: 280px;
-  overflow-y: scroll !important;
+  overflow-y: scroll;
 }
 
 .cockdelete {
