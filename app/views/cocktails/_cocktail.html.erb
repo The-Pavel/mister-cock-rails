@@ -1,0 +1,8 @@
+<div class="col col-xs-12 col-md-4 cocktail">
+  <div class="cockname"><%= link_to cocktail.name, cocktail %></div>
+  <div class="cockdelete"><%= link_to 'Destroy', cocktail, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+  <div class="cockedit"><%= link_to 'Edit', edit_cocktail_path(cocktail) %></div>
+</div>
+
+
+
