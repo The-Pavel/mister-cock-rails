@@ -5,6 +5,6 @@ class Ingredient < ApplicationRecord
 
 
   validates :name, presence: true
-  validates :name, uniqueness: { scope: :cocktail, through: :doses, message: "Ingredient already exists in this cocktail"}
+  # validates :name, uniqueness: { scope: :cocktail, through: :doses, message: "Ingredient already exists in this cocktail"}
 
 end

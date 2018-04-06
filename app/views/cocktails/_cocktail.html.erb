@@ -1,4 +1,5 @@
-<div class="col col-xs-12 col-md-4 cocktail" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('http://res.cloudinary.com/thepav/image/upload/c_fill,h_150,w_400/v1522989668/ftfpuneaohcqzm6khgpq.jpg')">
+<div class="col col-xs-12 col-md-4 cocktail" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
+         url('<%= cl_image_path cocktail.photo, height: 200, width: 500, crop: :fill %>')">
   <div class="cockname"><%= link_to cocktail.name, cocktail, class: 'white' %></div>
   <div class="cockdelete"><%= link_to 'Destroy', cocktail, method: :delete, data: { confirm: 'Are you sure?' }, class: 'white' %></div>
   <div class="cockedit"><%= link_to 'Edit', edit_cocktail_path(cocktail), class: 'white' %></div>

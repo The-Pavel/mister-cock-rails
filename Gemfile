@@ -13,6 +13,8 @@ gem 'rails', '~> 5.1.6'
 gem 'figaro'
 # adding cloud storage gem
 gem 'cloudinary'
+# adding photo uploader gem
+gem 'carrierwave', '~> 1.2'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
